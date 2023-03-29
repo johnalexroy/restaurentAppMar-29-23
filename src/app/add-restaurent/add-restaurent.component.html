@@ -1,0 +1,70 @@
+<div class="container mt-5 mb-3 border border-light p-3">
+ <form>
+    <div class="row">
+        <h3 class="text-light text-center mb-3">Add New Restaurant Details</h3>
+        <div class="col-md-6">
+
+            <div class="mb-2">
+                <input [(ngModel)]="id" name="id" placeholder="Restaurant Id" type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-2">
+                <input [(ngModel)]="neighborhood" required type="text" name="neighborhood" placeholder="Restaurant neighborhood" class="form-control">
+            </div>
+
+            <div class="mb-2">
+                <input [(ngModel)]="photograph" required type="text" name="photograph" placeholder="Restaurant Image" class="form-control">
+            </div>
+
+            <div class="mb-2">
+                <label class="text-light mb-2" for="">Operating Hours</label>
+                <input [(ngModel)]="Monday" required type="text" name="Monday" placeholder="Monday" class="form-control mb-2">
+                <input [(ngModel)]="Tuesday" required type="text" name="Tuesday" placeholder="Tuesday" class="form-control mb-2">
+                <input [(ngModel)]="Wednesday" required type="text" name="Wednesday" placeholder="Wednesday" class="form-control mb-2">
+                <input [(ngModel)]="Thursday" required type="text" name="Thursday" placeholder="Thursday" class="form-control mb-2">
+                <input [(ngModel)]="Friday" required type="text" name="Friday" placeholder="Friday" class="form-control mb-2">
+                <input [(ngModel)]="Saturday" required type="text" name="Saturday" placeholder="Saturday" class="form-control mb-2">
+                <input [(ngModel)]="Sunday" required type="text" name="Sunday" placeholder="Sunday" class="form-control mb-2">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="mb-2">
+                <input [(ngModel)]="rNAme" name="rNAme" required placeholder="Restaurant Name" type="text" class="form-control">
+            </div>
+    
+            <div class="mb-2">
+                <input [(ngModel)]="address" type="text" required name="address" placeholder="Restaurant Address" class="form-control">
+            </div>
+    
+            <div class="mb-2">
+                <input [(ngModel)]="cusine_type" type="text" required name="cusine_type" placeholder="Restaurant cusine type" class="form-control">
+            </div>
+    
+            <div class="mb-2">
+                <label class="text-light mb-2" for="">Reviews</label>
+                <input [(ngModel)]="rvname" required type="text" name="rvname" placeholder="Name" class="form-control mb-2">
+                <input [(ngModel)]="Date" required type="text" name="Date" placeholder="Date" class="form-control mb-2">
+                <input [(ngModel)]="Rating" required type="text" name="Rating" placeholder="Rating" class="form-control mb-2">
+                <input [(ngModel)]="Comments" required type="text" name="Comments" placeholder="Comments" class="form-control mb-2">
+            </div>
+    
+            
+            <div class="mb-2">
+                <label class="text-light mb-2" for="">Location</label>
+                <input [(ngModel)]="lat" required type="text" name="lat" placeholder="Latitude" class="form-control mb-2">
+                <input [(ngModel)]="lng" required type="text" name="lng" placeholder="Longitude" class="form-control mb-2">
+            </div>
+
+        </div>
+    </div>
+
+       
+
+<div class="text-center mt-3">
+    <button (click)="addProduct()" type="submit" class="btn btn-dark">Add Restaurant</button>
+</div>
+
+ </form>
+</div>
